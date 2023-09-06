@@ -1,0 +1,36 @@
+﻿@model Product
+
+<h1>
+    Create New Product
+</h1>
+<p>
+    Please enter product details
+</p>
+
+
+
+<form method="post">
+    <table>
+        <tr>
+            <td>
+                Product Name
+            </td>
+            <td>
+                <input asp-for="Name"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Product Price
+            </td>
+            <td>
+                <input asp-for="Price" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit" class="btn btn-primary btn-block">Create Product</button>
+            </td>
+        </tr>
+    </table>
+</form>

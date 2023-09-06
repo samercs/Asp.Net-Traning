@@ -1,0 +1,57 @@
+﻿@model List<Product>
+
+<h1>
+    Products List
+</h1>
+
+<div>
+    <a asp-controller="Products" asp-action="Create">Create Product</a>
+</div>
+
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["Message"]
+    </div>
+}
+
+<table class="table table-bordered">
+    <tr>
+        <td>
+            Product Id
+        </td>
+        <td>
+            Product Name
+        </td>
+        <td>
+            Product Price
+        </td>
+        <td>
+            Actions
+        </td>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>
+                @product.Id
+            </td>
+            <td>
+                <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id">
+                    @product.Name
+                </a>
+            </td>
+            <td>
+                <a asp-controller="Products" asp-action="Price" asp-route-price="@product.Price">
+                    @product.Price.ToString("c")
+                </a>
+            </td>
+            <td>
+                <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id">Details</a> |
+                <a asp-controller="Products" asp-action="Edit" asp-route-id="@product.Id">Edit</a> |
+                <a asp-controller="Products" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

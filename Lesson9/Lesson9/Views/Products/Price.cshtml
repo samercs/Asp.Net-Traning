@@ -1,0 +1,36 @@
+﻿@model List<Product>
+<table class="table table-bordered">
+    <tr>
+        <td>
+            Product Id
+        </td>
+        <td>
+            Product Name
+        </td>
+        <td>
+            Product Price
+        </td>
+        <td>
+            Actions
+        </td>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>
+                @product.Id
+            </td>
+            <td>
+                <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id">
+                    @product.Name
+                </a>
+            </td>
+            <td>
+                @product.Price.ToString("c")
+            </td>
+            <td>
+                <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id">Details</a>
+            </td>
+        </tr>
+    }
+</table>
