@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\Pocs\\Lesson9\\Lesson9\\Lesson9.csproj": {}
+    "C:\\Code\\Pocs\\Asp.Net Traning\\Lesson9\\Lesson9\\Lesson9.csproj": {}
   },
   "projects": {
-    "C:\\Code\\Pocs\\Lesson9\\Lesson9\\Lesson9.csproj": {
+    "C:\\Code\\Pocs\\Asp.Net Traning\\Lesson9\\Lesson9\\Lesson9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\Pocs\\Lesson9\\Lesson9\\Lesson9.csproj",
+        "projectUniqueName": "C:\\Code\\Pocs\\Asp.Net Traning\\Lesson9\\Lesson9\\Lesson9.csproj",
         "projectName": "Lesson9",
-        "projectPath": "C:\\Code\\Pocs\\Lesson9\\Lesson9\\Lesson9.csproj",
+        "projectPath": "C:\\Code\\Pocs\\Asp.Net Traning\\Lesson9\\Lesson9\\Lesson9.csproj",
         "packagesPath": "C:\\Users\\samer.alkhatib\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\Pocs\\Lesson9\\Lesson9\\obj\\",
+        "outputPath": "C:\\Code\\Pocs\\Asp.Net Traning\\Lesson9\\Lesson9\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,6 +64,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.9, )"
             }
           },
           "imports": [
