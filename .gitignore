@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Lesson9/.vs/Lesson9/v17/.suo
+/Lesson9/Lesson9/obj/Debug/net7.0/project.razor.vs.json
+/Lesson9/Lesson9/wwwroot/lib/bootstrap/LICENSE
+/Lesson9/.vs/Lesson9/FileContentIndex
